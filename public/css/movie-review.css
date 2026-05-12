@@ -1,0 +1,250 @@
+
+
+.page nav{
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    justify-content: space-around;
+    background-color: aliceblue;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+.main-container{
+    display: flex;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 20px;
+    height: auto;
+    place-content: center;
+}   
+
+main{
+    display: grid;
+    /* grid-template-columns: 1x/fr 10px; */
+    grid-template-columns:  470px 100px;
+    gap: 20px;
+    padding: 20px;
+    height: auto
+    
+    
+}
+
+/* section{
+    display: flex;
+    flex-direction: row;
+    background-color: #fbf9fc;
+    padding: 20px;
+    border-radius: 10px;
+} */
+.movie-card{
+    display: flex;
+    flex-direction: row;
+}
+aside{
+    background-image: url('../../assets/images/movie-ranking-project/adds/add1.png');
+    background-size:contain;
+    background-repeat: no-repeat;
+    height: 100%;
+}
+
+
+
+
+.movie-poster img{
+    width: 180px;
+    height: 290px;
+    margin-right: 20px;
+    padding-left: 0%;
+}
+
+h2{
+    margin: 0;
+    color: #333;
+    font-family: 'roboto', sans-serif;
+    font-style: normal;
+    
+}
+
+.movie-details p{
+    margin: 10px 0;
+    font-size: normal;
+    font-family: 'Courier New', Courier, monospace;
+
+    
+}
+
+.hd-band {
+    background-color: #ff8048;
+    color: white;
+    padding: 0 4px;
+    border-radius: 5px;
+    font-style: italic;
+    font-weight: bold;
+    font-family: 'icomoon', sans-serif;
+    font-size: 18px;
+    webkit-font-smoothing: antialiased;
+}
+
+.poster-nav{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.poster-nav span{
+    font-size: xx-small;
+    padding: 2px 4px;
+}
+
+.rating-section{
+   
+    margin-top: 20px;
+    padding-left: 0%;
+    font-family: 'icomoon', sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+    
+}   
+
+.rating-section li{
+    display:grid;
+    grid-template-columns: 70px 4px 3px 50px;
+    gap: 25px;
+    align-items: center;
+   
+    
+    
+
+}
+
+
+/* .rating-section{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    padding-left: 0%;
+    font-family: 'icomoon', sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+}    */
+
+/* .rating-section li{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    
+    
+    
+} */
+
+.rating-fig{
+    margin: 0;
+    font-size: normal;
+    font-family: 'Courier New', Courier, monospace;
+    color: #8d8484;
+}   
+
+.rating-box{
+    height: 18px;
+    width: 180%;
+    background-color: #faf3b9;
+    border-color: #faf3b9;
+    
+}
+
+.rating-fill{
+    display: block;
+    height: 100%;
+    background-color: #f4d107;
+    
+
+}
+
+.add-details{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+    
+}
+
+.add-details i{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    
+}
+
+.add-details span{
+    font-size: normal;
+    font-family: 'roboto', sans-serif;
+    color: #333;
+    font-weight: 350;
+}
+
+.watch-btn{
+    
+    background-color: #5bb346;
+    color: white;
+    border: none;
+    font-family: 'roboto', sans-serif;
+    cursor: pointer;
+    padding: 5px 10px;
+}
+
+.actor-section-slider{
+    margin-top: 20px;
+    justify-content: start;
+    position: relative;
+    overflow: hidden;
+}
+
+.actor-card{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    animation: slide 0.6s ease;
+
+    
+}
+
+.actor-card img{
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    object-fit:fill;
+}
+
+.aactor-details{
+    display: flex;
+    flex-direction: column;
+    font-family: 'roboto', sans-serif;
+    
+   
+}
+
+.actor-details p{
+    margin: 0;
+    font-weight: 595;
+    color: #333;
+}
+
+.actor-details span{
+    font-size: small;
+    color: #8d8484;
+    font-weight: 350;
+}
+
+@keyframes slide{
+    from{
+        transform: translateX(100%);
+    }
+    to{
+        transform: translateX(0%);
+    }
+}
